@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+      <img src="images/logo.png" class="logo">
+      <button class="restart">Restart</button>
+    </div>
+    <div class="container">
+        <div class="firstPlayerDiv">
+          <h4>Player 1 Token</h4>
+          <p class="first-player-token"></p>
+        </div>
+        <div class="content">
+          <div class="progress-div">
+            <h2>Game Progress</h2>
+            <p class="progress"></p>
+          </div>
+          <div class="boardDiv"></div>
+        </div>
+        <div class="secondPlayerDiv">
+          <h4>Player 2 Token</h4>
+          <p class="second-player-token"></p>
+        </div>
+        <dialog id="tokenChoice">
+            <form id="tokenchoice-form">
+              <p class="label">
+                <label for="firstPlayer"> 
+                  Player 1
+                </label>
+                <input type="text" placeholder="Choose your token" name="firstPlayer" id="firstPlayer" required>
+              </p>
+              <p class="label">
+                <label for="secondPlayer">
+                  Player 2
+                </label>
+                <input type="text" placeholder="Choose your token" name="secondPlayer" id="secondPlayer" required>
+              </p>
+              <div class="token-buttons">
+                <button id="confirmBtn" type="submit">Confirm</button>
+              </div>
+            </form>
+        </dialog>
+    </div>
+    
+</body>
+</html>
